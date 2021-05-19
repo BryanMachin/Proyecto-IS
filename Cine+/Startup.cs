@@ -8,6 +8,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Cine_.Models.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace Cine_
 {
@@ -24,6 +26,12 @@ namespace Cine_
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            //Para la BD:
+            services.AddDbContext<ApplicationDbContext>(options =>
+                options.UseSqlServer(
+                    Configuration["Data:Cine_:ConnectionString"]));
+            services.AddTransient<IRepository, EFRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -41,6 +49,8 @@ namespace Cine_
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+
+            app.UseStatusCodePages();
 
             app.UseRouting();
 

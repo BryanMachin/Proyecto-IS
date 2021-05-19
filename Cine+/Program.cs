@@ -21,6 +21,8 @@ namespace Cine_
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
+                    webBuilder.UseDefaultServiceProvider(options =>
+                    options.ValidateScopes = false);
                 });
     }
 }
