@@ -13,6 +13,18 @@ namespace Cine_.Models.Data
 
         public DbSet<Movie> Movies { get; set; }
 
+        public DbSet<Client> Clients { get; set; }
+
+        public DbSet<Room> Rooms { get; set; }
+
+        public DbSet<Genre> Genres { get; set; }
+
+        public DbSet<Shift> Shifts { get; set; }
+
+        public DbSet<SpecialDate> SpecialDates { get; set; }
+
+        public DbSet<SpecialUser> SpecialUsers { get; set; }
+
 
     }
 }

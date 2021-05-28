@@ -19,6 +19,31 @@ namespace Cine_.Migrations
                 .HasAnnotation("ProductVersion", "5.0.6")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("Cine_.Models.Entities.Client", b =>
+                {
+                    b.Property<Guid>("ClientID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("IdentityNumber")
+                        .HasMaxLength(11)
+                        .HasColumnType("nvarchar(11)");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasMaxLength(127)
+                        .HasColumnType("nvarchar(127)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(127)
+                        .HasColumnType("nvarchar(127)");
+
+                    b.HasKey("ClientID");
+
+                    b.ToTable("Clients");
+                });
+
             modelBuilder.Entity("Cine_.Models.Entities.Movie", b =>
                 {
                     b.Property<Guid>("MovieID")

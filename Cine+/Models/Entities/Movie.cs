@@ -15,6 +15,7 @@ namespace Cine_.Models.Entities
         [StringLength(127, ErrorMessage = "Limit of characters(127) exceeded")]
         public string Title { get; set; }
 
+        [Range(0,10,ErrorMessage ="Rating value must be between 0 and 10")]
         public float Rating { get; set; }
 
         [Required(ErrorMessage = "Please enter a nationality")]

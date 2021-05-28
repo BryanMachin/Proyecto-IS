@@ -17,13 +17,18 @@ namespace Cine_.Models.Data
 
         public IQueryable<Movie> Movies => context.Movies;
 
+        public IQueryable<Client> Clients => context.Clients;
+
+
+
+
         public Movie DeleteMovie(Guid id)
         {
             Movie movie = context.Movies.FirstOrDefault(m => m.MovieID == id);
 
             if (movie != null)
             {
-                context.Remove(movie);
+                context.Movies.Remove(movie);
                 context.SaveChanges();
             }
             return movie;
@@ -33,7 +38,7 @@ namespace Cine_.Models.Data
         {
             if (movie.MovieID.CompareTo(Guid.Empty) == 0)
             {
-                context.Add(movie);
+                context.Movies.Add(movie);
             }
             else 
             {
@@ -45,6 +50,38 @@ namespace Cine_.Models.Data
                 bdMovie.Synopsis = movie.Synopsis;
             }
             
+            context.SaveChanges();
+        }
+
+
+        public Client DeleteClient(Guid id)
+        {
+            Client client = context.Clients.FirstOrDefault(m => m.ClientID == id);
+
+            if (client != null)
+            {
+                context.Clients.Remove(client);
+                context.SaveChanges();
+            }
+            return client;
+        }
+
+        public void SaveClient(Client client)
+        {
+            if (client.ClientID.CompareTo(Guid.Empty) == 0)
+            {
+                context.Clients.Add(client);
+            }
+            else
+            {
+                Client bdClient = context.Clients.FirstOrDefault(m => m.ClientID == client.ClientID) ;
+
+                bdClient.Name = client.Name;
+                bdClient.LastName = client.LastName;
+                bdClient.IdentityNumber = client.IdentityNumber;
+                
+            }
+
             context.SaveChanges();
         }
 

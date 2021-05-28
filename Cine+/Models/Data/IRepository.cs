@@ -10,8 +10,14 @@ namespace Cine_.Models.Data
     {
         IQueryable<Movie> Movies { get; }
 
+        IQueryable<Client> Clients { get; }
+
         void SaveMovie(Movie movie);
 
         Movie DeleteMovie(Guid id);
+
+        void SaveClient(Client client);
+
+        Client DeleteClient(Guid id);
     }
 }

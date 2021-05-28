@@ -10,6 +10,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Cine_.Models.Data;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Data.Sqlite;
 
 namespace Cine_
 {
@@ -28,9 +29,11 @@ namespace Cine_
             services.AddControllersWithViews();
 
             //Para la BD:
-            services.AddDbContext<ApplicationDbContext>(options =>
+            
+              services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration["Data:Cine_:ConnectionString"]));
+
             services.AddTransient<IRepository, EFRepository>();
         }
 
