@@ -1,0 +1,25 @@
+﻿@model RoomDateViewModel
+<div class="jumbotron margin text-white">
+    <h1 class="display-3">@Model.Room.Name</h1>
+    <p>This room has a capacity of @Model.Room.Capacity people</p>
+    <p class="lead">
+    </p>
+    <a class="btn btn-success btn-lg space right" asp-action="Index" role="button">Back to index</a>
+
+    @using (Html.BeginForm("RoomDate", "Room", FormMethod.Post, new { id = "roomDate" }))
+    {
+        <div class="form-group margin">
+            
+            <input type="date" asp-for="@Model.Date" />    
+            <button class="btn btn-info" type="submit"> Schedule </button>
+        </div>
+
+        @Html.HiddenFor(p => p.Room.RoomID)
+        @Html.HiddenFor(p => p.Room.Capacity)
+        @Html.HiddenFor(p => p.Room.Name)
+
+
+    }
+
+
+</div>

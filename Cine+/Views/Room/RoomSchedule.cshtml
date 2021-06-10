@@ -1,0 +1,58 @@
+﻿@model RoomScheduleViewModel
+<div class="jumbotron margin text-white">
+    <h1 class="display-3">@Model.Room.Name</h1>
+    <p>This room has a capacity of @Model.Room.Capacity people</p>
+    <p class="lead">
+    </p>
+    <a class="btn btn-success btn-lg space right" asp-action="Index" role="button">Back to index</a>
+
+    @using (Html.BeginForm("RoomDate", "Room", FormMethod.Post, new { id = "roomDate" }))
+    {
+        <div class="form-group margin">
+            <input type="date" asp-for="@Model.Date" />
+            <button class="btn btn-info" type="submit"> Schedule </button>
+        </div>
+
+        @Html.HiddenFor(p => p.Room.RoomID)
+        @Html.HiddenFor(p => p.Room.Capacity)
+        @Html.HiddenFor(p => p.Room.Name)
+    }
+
+    @using (Html.BeginForm("RoomSchedule", "Room", FormMethod.Post, new { id = "roomSchedule" }))
+    {
+<div class=" fixed bg-secondary mb-3 breadcrumb margin pos" style="max-width: 50rem; min-width:50rem">
+    <table class="table my-2 text-center table-striped table-light">
+        <tr>
+            <th>Shift</th>
+            <th>Movie</th>
+            <th>Ticket Price</th>
+        </tr>
+        @for (int i = 0; i < Model.Shifts.Count; i++)
+        {
+            @Html.HiddenFor(p => p.Shifts[i].ShiftID)
+            @Html.HiddenFor(p => p.Shifts[i].Name)
+            @Html.HiddenFor(p => p.Shifts[i].Time)
+            <tr>
+                <td>@Model.Shifts[i].Name</td>
+                <td>
+                    <div>@Html.DropDownListFor(p => p.ProgrammedMovies[i].MovieID, new SelectList(Model.Movies, "MovieID", "Title"))</div>
+                </td>
+                <td><input asp-for="TicketPrices[i]" value="@Model.TicketPrices[i]" type="number" min="2" max="20"></td>
+            </tr>
+        }
+        @Html.HiddenFor(p => p.Room.RoomID)
+        @Html.HiddenFor(p => p.Room.Name)
+        @Html.HiddenFor(p => p.Room.Capacity)
+        @Html.HiddenFor(p => p.Date)
+    <tr>
+        <td></td>
+        <td>
+            <button type="submit" class="btn btn-success text-center">Accept</button>
+        </td>
+        <td></td>
+</table>
+</div>
+        
+    }
+
+</div>

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Cine_.Models.Entities;
+using Cine_.Models.Relations;
 
 namespace Cine_.Models.Data
 {
@@ -25,6 +26,13 @@ namespace Cine_.Models.Data
 
         public DbSet<SpecialUser> SpecialUsers { get; set; }
 
+        public DbSet<DiscountType> DiscountTypes { get; set; }
 
+        public DbSet<Presentation> Presentations { get; set; }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Presentation>().HasKey(m => new { m.MovieID, m.RoomID, m.ShiftID, m.Date });
+
+        }
     }
 }

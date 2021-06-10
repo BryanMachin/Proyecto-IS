@@ -1,5 +1,31 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿@model IEnumerable<SpecialDate>
+
+<table class="table table-striped text-center table-light">
+    <tr>
+        <th>Name</th>
+        <th>Date</th>
+        <th>Discount Rate</th>
+        
+        <th></th>
+    </tr>
+    @foreach (var i in Model)
+    {
+        <tr>
+            <td> @i.Name </td>
+            <td> @i.Date.Month/@i.Date.Day/@i.Date.Year </td>
+            <td> @i.DiscountRate </td>
+            <td class="text-center">
+                <form asp-action="Delete" method="post">
+                    <a asp-action="Edit" class="btn btn-sm btn-warning fa fa-pencil-alt" asp-route-SpecialDateID="@i.SpecialDateID"></a>
+                    <input type="hidden" name="SpecialDateID" value="@i.SpecialDateID" />
+                    <button type="submit" class="btn btn-sm btn-primary fa fa-trash"></button>
+                </form>
+            </td>
+        </tr>
+    }
+</table>
+<div class="text-center">
+    <a asp-action="Create" class="btn btn-info">
+        Add Special Date
+    </a>
+</div>

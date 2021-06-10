@@ -12,7 +12,7 @@ namespace Cine_.Models.Entities
         public Guid SpecialDateID { get; set; }
 
         [Required(ErrorMessage = "Please enter a name")]
-        [StringLength(127, ErrorMessage = "Limit of characters(127) exceeded")]
+        [StringLength(20, ErrorMessage = "Limit of characters(20) exceeded")]
         public string Name { get; set; }
 
         [Required(ErrorMessage = "Please enter a date")]

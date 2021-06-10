@@ -1,6 +1,7 @@
 ﻿@model IEnumerable<Client>
 
-<table class="table table-bordered table-striped table-sm">
+
+<table class="table my-2 table-bordered table-striped table-sm border table-warning">
     <tr>
         <th>Name</th>
         <th>Last Name</th>
@@ -15,13 +16,9 @@
             <td> @i.IdentityNumber </td>
             <td class="text-center">
                 <form asp-action="Delete" method="post" >
-                    <a asp-action="Edit" class="btn btn-sm btn-warning" asp-route-ClientID="@i.ClientID">
-                        Edit
-                    </a>   
+                    <a asp-action="Edit" class="btn btn-sm btn-warning fa fa-pencil-alt" asp-route-ClientID="@i.ClientID"></a>   
                      <input type="hidden" name="ClientID" value="@i.ClientID" />
-                     <button type="submit" class="btn btn-sm btn-danger">
-                            Delete
-                          </button>                    
+                     <button type="submit" class="btn btn-sm btn-danger fa fa-trash"></button>                    
                     </form>                
             </td>
         </tr>

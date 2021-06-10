@@ -44,11 +44,52 @@ namespace Cine_.Migrations
                     b.ToTable("Clients");
                 });
 
+            modelBuilder.Entity("Cine_.Models.Entities.DiscountType", b =>
+                {
+                    b.Property<Guid>("DiscountTypeID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<float>("DiscountRate")
+                        .HasColumnType("real");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(127)
+                        .HasColumnType("nvarchar(127)");
+
+                    b.HasKey("DiscountTypeID");
+
+                    b.ToTable("DiscountTypes");
+                });
+
+            modelBuilder.Entity("Cine_.Models.Entities.Genre", b =>
+                {
+                    b.Property<Guid>("GenreID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(127)
+                        .HasColumnType("nvarchar(127)");
+
+                    b.HasKey("GenreID");
+
+                    b.ToTable("Genres");
+                });
+
             modelBuilder.Entity("Cine_.Models.Entities.Movie", b =>
                 {
                     b.Property<Guid>("MovieID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("GenreID")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("GenreName")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Nationality")
                         .IsRequired()
@@ -60,8 +101,8 @@ namespace Cine_.Migrations
 
                     b.Property<string>("Synopsis")
                         .IsRequired()
-                        .HasMaxLength(127)
-                        .HasColumnType("nvarchar(127)");
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
 
                     b.Property<string>("Title")
                         .IsRequired()
@@ -71,6 +112,133 @@ namespace Cine_.Migrations
                     b.HasKey("MovieID");
 
                     b.ToTable("Movies");
+                });
+
+            modelBuilder.Entity("Cine_.Models.Entities.Room", b =>
+                {
+                    b.Property<Guid>("RoomID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("Capacity")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(127)
+                        .HasColumnType("nvarchar(127)");
+
+                    b.HasKey("RoomID");
+
+                    b.ToTable("Rooms");
+                });
+
+            modelBuilder.Entity("Cine_.Models.Entities.Shift", b =>
+                {
+                    b.Property<Guid>("ShiftID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(16)
+                        .HasColumnType("nvarchar(16)");
+
+                    b.Property<DateTime>("Time")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("ShiftID");
+
+                    b.ToTable("Shifts");
+                });
+
+            modelBuilder.Entity("Cine_.Models.Entities.SpecialDate", b =>
+                {
+                    b.Property<Guid>("SpecialDateID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime2");
+
+                    b.Property<float>("DiscountRate")
+                        .HasColumnType("real");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(127)
+                        .HasColumnType("nvarchar(127)");
+
+                    b.HasKey("SpecialDateID");
+
+                    b.ToTable("SpecialDates");
+                });
+
+            modelBuilder.Entity("Cine_.Models.Entities.SpecialUser", b =>
+                {
+                    b.Property<Guid>("SpecialUserID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("SpecialUserID");
+
+                    b.ToTable("SpecialUsers");
+                });
+
+            modelBuilder.Entity("Cine_.Models.Relations.Presentation", b =>
+                {
+                    b.Property<Guid>("MovieID")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("RoomID")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("ShiftID")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("Availability")
+                        .HasColumnType("int");
+
+                    b.Property<float>("TicketPrice")
+                        .HasColumnType("real");
+
+                    b.HasKey("MovieID", "RoomID", "ShiftID", "Date");
+
+                    b.HasIndex("RoomID");
+
+                    b.HasIndex("ShiftID");
+
+                    b.ToTable("Presentations");
+                });
+
+            modelBuilder.Entity("Cine_.Models.Relations.Presentation", b =>
+                {
+                    b.HasOne("Cine_.Models.Entities.Movie", "Movie")
+                        .WithMany()
+                        .HasForeignKey("MovieID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Cine_.Models.Entities.Room", "Room")
+                        .WithMany()
+                        .HasForeignKey("RoomID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Cine_.Models.Entities.Shift", "Shift")
+                        .WithMany()
+                        .HasForeignKey("ShiftID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Movie");
+
+                    b.Navigation("Room");
+
+                    b.Navigation("Shift");
                 });
 #pragma warning restore 612, 618
         }

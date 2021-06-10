@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Cine_.Models.Entities
 {
@@ -21,17 +22,15 @@ namespace Cine_.Models.Entities
         [Required(ErrorMessage = "Please enter a nationality")]
         [StringLength(127, ErrorMessage = "Limit of characters(127) exceeded")]
         public string Nationality { get; set; }
-
-       /*
-        [Required(ErrorMessage = "Please enter a genre")]
-        [StringLength(127, ErrorMessage = "Limit of characters(127) exceeded")]
-        public string Genre { get; set; }
-       */
-
+       
         [Required(ErrorMessage = "Please enter a synopsis")]
-        [StringLength(127, ErrorMessage = "Limit of characters(127) exceeded")]
+        [StringLength(500, ErrorMessage = "Limit of characters(500) exceeded")]
         public string Synopsis { get; set; }
 
+        [Display(Name = "Genre")]
+        public Guid GenreID { get; set; }
+
+        public string GenreName{ get; set; }
 
 
     }

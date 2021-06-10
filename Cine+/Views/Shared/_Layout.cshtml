@@ -5,25 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Cine_</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+
     <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/StyleBack.css" />
+    <link rel="stylesheet" href="~/css/usefulSS.css" />
+    <link rel="stylesheet" href="~/assets/css/all.css" />
+    <link rel="stylesheet" href="~/css/StyleSheet.css" />
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Cine_</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+    <header class="header">
+        <nav class="navbar navbar-expand-sm ">
+            <div class="container-fluid">
+                <a class="navbar-brand text-light" href="#">Cine</a>
+                    <i class="fa fa-plus text-primary" aria-hidden="true"></i>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
+
+                <div class="collapse navbar-collapse" id="navbarColor01">
+                    <ul class="navbar-nav m-auto">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link active" asp-area="" asp-controller="Movie" asp-action="Index">
+                                Movies
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link active" asp-area="" asp-controller="Room" asp-action="Index">
+                                Rooms
+                            </a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" asp-area="" asp-controller="Genre" asp-action="Index">
+                                Genres
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" asp-area="" asp-controller="DiscountType" asp-action="Index">
+                                Discount Types
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" asp-area="" asp-controller="Shift" asp-action="Index">
+                                Shifts
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" asp-area="" asp-controller="SpecialDate" asp-action="Index">
+                                Special Dates
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" asp-area="" asp-controller="SpecialUser" asp-action="Index">
+                                Special Users
+                            </a>
+                        </li>
+
                     </ul>
                 </div>
             </div>
@@ -35,9 +73,9 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <footer class="footer text-white">
         <div class="container">
-            &copy; 2021 - Cine_ - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2021 - Cine Plus 
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

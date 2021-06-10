@@ -1,0 +1,29 @@
+﻿@model Shift
+
+<div class="margin mx-auto card text-dark bg-light mb-3" style="max-width: 40rem;">
+    <div class="card-header text-dark">Edit Shift</div>
+    <div class="card-body">
+        <form asp-action="Edit" method="post">
+            <input type="hidden" asp-for="ShiftID" />
+            <div class=" form-group">
+                <label asp-for="Name"> </label>
+                <div><span asp-validation-for="Name" class="text-primary"></span></div>
+                <input asp-for="Name" autocomplete="off" class="form-control" />
+            </div>
+            <div class=" form-group">
+                <label asp-for="Time"> </label>
+                <div><span asp-validation-for="Time" class="text-primary"></span></div>
+                <input type="datetime" asp-for="Time"  value="@Model.Time.Hour:@Model.Time.Minute" class="form-control" autocomplete="off" />
+            </div>
+
+
+            <div class="margin text-center">
+                <button class="btn btn-info" type="submit"> Save </button>
+                <a asp-action="Index" class="btn btn-dark">  Cancel </a>
+            </div>
+
+
+        </form>
+
+    </div>
+</div>

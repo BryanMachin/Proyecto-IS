@@ -1,0 +1,31 @@
+﻿@model Room
+<div class="margin mx-auto card text-white bg-light mb-3" style="max-width: 40rem;">
+    <div class="card-header text-dark">Edit Room</div>
+    <div class="card-body">
+        <form asp-action="Edit" method="post">
+            <input type="hidden" asp-for="RoomID" />
+            <div class="form-group text-dark">
+                <label asp-for="Name"> </label>
+                @if (ViewBag.ErrorMessage != null)
+                {
+                    <div class="text-primary">
+                        <p>@ViewBag.ErrorMessage</p>
+                    </div>
+                }
+                <div><span asp-validation-for="Name" class="text-primary"></span></div>
+                <input asp-for="Name" autocomplete="off" class="form-control" />
+            </div>
+
+            <div class="form-group margin text-dark">
+                <label asp-for="Capacity"> </label>
+                <div><span asp-validation-for="Capacity" class="text-primary"></span></div>
+                <input asp-for="Capacity" value="5" min="5" max="500" class="form-control" />
+            </div>
+
+            <div class="margin text-center">
+                <button class="btn btn-info" type="submit"> Save </button>
+                <a asp-action="Index" class="btn btn-dark">  Cancel </a>
+            </div>
+        </form>
+    </div>
+</div>

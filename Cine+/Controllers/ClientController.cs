@@ -16,7 +16,7 @@ namespace Cine_.Controllers
 
         public ViewResult Index() => View(repository.Clients);
 
-        public ViewResult Edit(Guid id) => View(repository.Clients.FirstOrDefault(m => m.ClientID == id));
+        public ViewResult Edit(Guid ClientID) => View(repository.Clients.FirstOrDefault(m => m.ClientID == ClientID));
 
         [HttpPost]
         public ActionResult Edit(Client client)

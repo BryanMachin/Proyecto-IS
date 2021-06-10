@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Cine+\\Cine+\\Cine+.csproj": {}
+    "C:\\Users\\Jose Alejandro\\Documents\\IS\\Cine+\\Cine+\\Cine+.csproj": {}
   },
   "projects": {
-    "D:\\Cine+\\Cine+\\Cine+.csproj": {
+    "C:\\Users\\Jose Alejandro\\Documents\\IS\\Cine+\\Cine+\\Cine+.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Cine+\\Cine+\\Cine+.csproj",
+        "projectUniqueName": "C:\\Users\\Jose Alejandro\\Documents\\IS\\Cine+\\Cine+\\Cine+.csproj",
         "projectName": "Cine+",
-        "projectPath": "D:\\Cine+\\Cine+\\Cine+.csproj",
-        "packagesPath": "C:\\Users\\Bryan\\.nuget\\packages\\",
-        "outputPath": "D:\\Cine+\\Cine+\\obj\\",
+        "projectPath": "C:\\Users\\Jose Alejandro\\Documents\\IS\\Cine+\\Cine+\\Cine+.csproj",
+        "packagesPath": "C:\\Users\\Jose Alejandro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jose Alejandro\\Documents\\IS\\Cine+\\Cine+\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Bryan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jose Alejandro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -40,6 +43,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Bootstrap.Datepicker": {
+              "target": "Package",
+              "version": "[1.8.0.1, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.6, )"
