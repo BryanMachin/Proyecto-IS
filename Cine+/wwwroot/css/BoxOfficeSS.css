@@ -1,6 +1,71 @@
 ﻿body {
-    background-color: black;
     background-image: url(../images/cinema4.jpg);
     background-repeat: no-repeat;
-    background-size: 1600px 1000px;
+    background-size: cover;
+    min-height: 90vh;
+    color: ButtonHighlight;
+}
+
+.header .navbar {
+    background-color: #303030 !important;
+    border-color: transparent;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 25px 0;
+}
+
+    .navbar ul li a:visited {
+        color: white;
+    }
+
+#buttonNav:hover {
+    color: ButtonHighlight;
+}
+
+
+#settings {
+    font-size: 25px;
+    color: white;
+    position: fixed;
+    right: 1%;
+    top: 2.5%;
+}
+
+#SettingDropdown {
+    background-color: #303030;
+    border-color: transparent;
+    position: fixed;
+    right: 0%;
+    top: 10%;
+    font-family: 'Agency FB';
+    font-size: 18px;
+}
+
+#Dropdown {
+    background-color: #303030;
+    border-color: transparent;
+    font-family: 'Agency FB';
+    font-size: 18px;
+}
+
+.navbar a {
+    color: white;
+    font-family: 'Agency FB';
+    font-size: 16px;
+}
+
+.navbar i {
+    font-size: 40px;
+}
+
+#buttonNav {
+    color: white;
+    font-size: 20px;
+    font-family: 'Arial Rounded MT',sans-serif;
+    padding: 20px;
 }

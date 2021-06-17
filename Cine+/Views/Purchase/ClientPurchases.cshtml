@@ -1,0 +1,54 @@
+﻿@model IEnumerable<ShowPurchaseViewModel>
+
+
+@if (Model == null || Model.Count() == 0)
+{
+    <div class="jumbotron margin text-white" style="max-width:20rem">
+        <h6 class="display-3">:(</h6>
+        <p class="lead">You don't have any reserved tickets currently. However,if you still think you do, check your input information.</p>
+        <a asp-controller="Purchase" asp-action="ReturnTickets" class="btn btn-info">Back</a>
+        </div>
+}
+else
+{
+        <div id=table>
+            <table class="table my-2 text-center table-light">
+                <tr>
+                    <th>Movie</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Tickets</th>
+                    <th>Import</th>
+                    <th></th>
+                </tr>
+                @foreach (var i in Model)
+                {
+                    <tr>
+                        <td valign="middle"> @i.MovieTitle </td>
+                        <td valign="middle"> @i.Date.Month/@i.Date.Day/@i.Date.Year </td>
+                        <td valign="middle"> @i.ShiftTime.Hour:@i.ShiftTime.Minute </td>
+                        <td valign="middle"> @i.Tickets </td>
+                        @if (i.PaidWithPoints)
+                        {
+                            <td valign="middle"> @i.Import Points </td>
+                        }
+                        else
+                        {
+                            <td valign="middle"> @i.Import USD</td>
+                        }
+
+                        <td valign="middle" class="text-center">
+                            <a asp-action="DeletePurchase" class="btn btn-sm btn-primary fa fa-trash-restore"
+                               asp-route-ClientID="@i.ClientID" asp-route-MovieID="@i.MovieID"
+                               asp-route-RoomID="@i.RoomID" asp-route-ShiftID="@i.ShiftID"
+                               asp-route-Date="@i.Date">
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </table>
+        </div>
+
+
+
+}

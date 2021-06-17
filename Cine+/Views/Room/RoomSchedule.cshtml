@@ -1,5 +1,5 @@
 ﻿@model RoomScheduleViewModel
-<div class="jumbotron margin text-white">
+<div class="jumbotron margin text-white" style="position:fixed;top:10%;left:5%">
     <h1 class="display-3">@Model.Room.Name</h1>
     <p>This room has a capacity of @Model.Room.Capacity people</p>
     <p class="lead">
@@ -20,8 +20,8 @@
 
     @using (Html.BeginForm("RoomSchedule", "Room", FormMethod.Post, new { id = "roomSchedule" }))
     {
-<div class=" fixed bg-secondary mb-3 breadcrumb margin pos" style="max-width: 50rem; min-width:50rem">
-    <table class="table my-2 text-center table-striped table-light">
+<div id="tableSchedule" class="bg-secondary mb-3 breadcrumb margin pos">
+    <table class="table my-2 text-center table-light">
         <tr>
             <th>Shift</th>
             <th>Movie</th>
@@ -39,20 +39,23 @@
                 </td>
                 <td><input asp-for="TicketPrices[i]" value="@Model.TicketPrices[i]" type="number" min="2" max="20"></td>
             </tr>
+
         }
         @Html.HiddenFor(p => p.Room.RoomID)
         @Html.HiddenFor(p => p.Room.Name)
         @Html.HiddenFor(p => p.Room.Capacity)
         @Html.HiddenFor(p => p.Date)
-    <tr>
-        <td></td>
-        <td>
-            <button type="submit" class="btn btn-success text-center">Accept</button>
-        </td>
-        <td></td>
-</table>
+        <tr>
+            <td></td>
+            <td>
+                <button type="submit" class="btn btn-success text-center">Accept</button>
+            </td>
+            <td></td>
+        </tr>
+    </table>
+    
 </div>
         
-    }
+     }
 
 </div>

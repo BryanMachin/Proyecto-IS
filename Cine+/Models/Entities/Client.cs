@@ -11,18 +11,18 @@ namespace Cine_.Models.Entities
         [Key]
         public Guid ClientID { get; set; }
 
-        [Required(ErrorMessage = "Please enter a Name")]
+        [Required(ErrorMessage = "Please enter a name")]
         [StringLength(127, ErrorMessage = "Limit of characters(127) exceeded")]
         public string Name { get; set; }
 
-        [Required(ErrorMessage = "Please enter a Last Name")]
+        [Required(ErrorMessage = "Please enter a last name")]
         [StringLength(127, ErrorMessage = "Limit of characters(127) exceeded")]
         [Display(Name = "Last Name")]
         public string LastName { get; set; }
 
-        [StringLength(11, ErrorMessage = "Limit of characters(11) exceeded")]
+        [Required(ErrorMessage = "Please enter an identity number")]
+        [StringLength(11, ErrorMessage = "Limit of characters(11) exceeded")]   
         [Display(Name = "Identity Number")]
         public string IdentityNumber { get; set; }
-
     }
 }

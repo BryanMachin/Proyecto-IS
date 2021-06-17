@@ -31,7 +31,6 @@ namespace Cine_.Controllers
                 return View(shift);
             }
         }
-
         public ActionResult Create() => View("Edit", new Shift());
 
         [HttpPost]

@@ -1,5 +1,5 @@
 ﻿@model RoomDateViewModel
-<div class="jumbotron margin text-white">
+<div class="jumbotron margin text-white" style="position:fixed;top:10%;left:5%">
     <h1 class="display-3">@Model.Room.Name</h1>
     <p>This room has a capacity of @Model.Room.Capacity people</p>
     <p class="lead">
@@ -7,7 +7,7 @@
     <a class="btn btn-success btn-lg space right" asp-action="Index" role="button">Back to index</a>
 
     @using (Html.BeginForm("RoomDate", "Room", FormMethod.Post, new { id = "roomDate" }))
-    {
+     {
         <div class="form-group margin">
             
             <input type="date" asp-for="@Model.Date" />    
@@ -18,8 +18,7 @@
         @Html.HiddenFor(p => p.Room.Capacity)
         @Html.HiddenFor(p => p.Room.Name)
 
-
-    }
+     }
 
 
 </div>

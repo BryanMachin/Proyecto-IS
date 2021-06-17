@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Cine_.Models.Data;
 using Cine_.Models.Entities;
 using Cine_.Models.ViewModels;
+using Cine_.Models.Relations;
 
 namespace Cine_.Controllers
 {
@@ -24,11 +25,11 @@ namespace Cine_.Controllers
                 Genres = repository.Genres
             };
             if (MovieID.CompareTo(Guid.Empty) == 0)
-                viewModel.Movie = new Movie();
+                viewModel.Movie = new Movie()
+;
             else viewModel.Movie = repository.Movies.FirstOrDefault(m => m.MovieID == MovieID);
 
             return View(viewModel);
-
         }
 
         [HttpPost]
@@ -58,5 +59,8 @@ namespace Cine_.Controllers
             return RedirectToAction("Index");
         }
         public ViewResult Profile(Guid MovieID) => View(repository.Movies.FirstOrDefault(m => m.MovieID == MovieID));
-    }
+
+
+
+    }   
 }

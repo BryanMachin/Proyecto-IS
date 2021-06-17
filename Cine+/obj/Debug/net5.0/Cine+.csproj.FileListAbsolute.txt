@@ -190,8 +190,6 @@ C:\Users\Jose Alejandro\Documents\IS\Cine+\Cine+\obj\Debug\net5.0\Cine+.TagHelpe
 C:\Users\Jose Alejandro\Documents\IS\Cine+\Cine+\obj\Debug\net5.0\Cine+.RazorCoreGenerate.cache
 C:\Users\Jose Alejandro\Documents\IS\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Client\Edit.cshtml.g.cs
 C:\Users\Jose Alejandro\Documents\IS\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Client\Index.cshtml.g.cs
-C:\Users\Jose Alejandro\Documents\IS\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\DiscountType\Edit.cshtml.g.cs
-C:\Users\Jose Alejandro\Documents\IS\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\DiscountType\Index.cshtml.g.cs
 C:\Users\Jose Alejandro\Documents\IS\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Genre\Edit.cshtml.g.cs
 C:\Users\Jose Alejandro\Documents\IS\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Genre\Index.cshtml.g.cs
 C:\Users\Jose Alejandro\Documents\IS\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\HomeBoxOffice\Index.cshtml.g.cs
@@ -226,3 +224,393 @@ C:\Users\Jose Alejandro\Documents\IS\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Ro
 C:\Users\Jose Alejandro\Documents\IS\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Room\RoomSchedule.cshtml.g.cs
 C:\Users\Jose Alejandro\Documents\IS\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Movie\Profile.cshtml.g.cs
 C:\Users\Jose Alejandro\Documents\IS\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\SpecialDate\Edit.cshtml.g.cs
+C:\Users\Jose Alejandro\Documents\IS\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\SpecialUser\Edit.cshtml.g.cs
+C:\Users\Jose Alejandro\Documents\IS\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Shared\_LayoutClientPurchasing.cshtml.g.cs
+C:\Users\Jose Alejandro\Documents\IS\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Purchase\BuyTickets.cshtml.g.cs
+C:\Users\Jose Alejandro\Documents\IS\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Purchase\MovieDates.cshtml.g.cs
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\Cine+.exe
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\appsettings.json
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\Cine+.deps.json
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\Cine+.runtimeconfig.json
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\Cine+.runtimeconfig.dev.json
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\Cine+.dll
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\ref\Cine+.dll
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\Cine+.pdb
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\Cine+.Views.dll
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\Cine+.Views.pdb
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\Humanizer.dll
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\Microsoft.Data.Sqlite.dll
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\SQLitePCLRaw.batteries_v2.dll
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\SQLitePCLRaw.nativelibrary.dll
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\SQLitePCLRaw.core.dll
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\System.Runtime.Caching.dll
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\runtimes\alpine-x64\native\libe_sqlite3.so
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\runtimes\linux-arm\native\libe_sqlite3.so
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\runtimes\linux-armel\native\libe_sqlite3.so
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\runtimes\linux-mips64\native\libe_sqlite3.so
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\Bryan\Desktop\Cine+\Cine+\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Bryan\Desktop\Cine+\Cine+\obj\Debug\net5.0\Cine+.csprojAssemblyReference.cache
+C:\Users\Bryan\Desktop\Cine+\Cine+\obj\Debug\net5.0\Cine+.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bryan\Desktop\Cine+\Cine+\obj\Debug\net5.0\Cine+.AssemblyInfoInputs.cache
+C:\Users\Bryan\Desktop\Cine+\Cine+\obj\Debug\net5.0\Cine+.AssemblyInfo.cs
+C:\Users\Bryan\Desktop\Cine+\Cine+\obj\Debug\net5.0\Cine+.csproj.CoreCompileInputs.cache
+C:\Users\Bryan\Desktop\Cine+\Cine+\obj\Debug\net5.0\Cine+.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Bryan\Desktop\Cine+\Cine+\obj\Debug\net5.0\Cine+.RazorAssemblyInfo.cache
+C:\Users\Bryan\Desktop\Cine+\Cine+\obj\Debug\net5.0\Cine+.RazorAssemblyInfo.cs
+C:\Users\Bryan\Desktop\Cine+\Cine+\obj\Debug\net5.0\staticwebassets\Cine+.StaticWebAssets.Manifest.cache
+C:\Users\Bryan\Desktop\Cine+\Cine+\obj\Debug\net5.0\staticwebassets\Cine+.StaticWebAssets.xml
+C:\Users\Bryan\Desktop\Cine+\Cine+\obj\Debug\net5.0\scopedcss\bundle\Cine+.styles.css
+C:\Users\Bryan\Desktop\Cine+\Cine+\obj\Debug\net5.0\Cine+.TagHelpers.input.cache
+C:\Users\Bryan\Desktop\Cine+\Cine+\obj\Debug\net5.0\Cine+.TagHelpers.output.cache
+C:\Users\Bryan\Desktop\Cine+\Cine+\obj\Debug\net5.0\Cine+.RazorCoreGenerate.cache
+C:\Users\Bryan\Desktop\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Client\Edit.cshtml.g.cs
+C:\Users\Bryan\Desktop\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Client\Index.cshtml.g.cs
+C:\Users\Bryan\Desktop\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\DiscountType\Edit.cshtml.g.cs
+C:\Users\Bryan\Desktop\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\DiscountType\Index.cshtml.g.cs
+C:\Users\Bryan\Desktop\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Genre\Edit.cshtml.g.cs
+C:\Users\Bryan\Desktop\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Genre\Index.cshtml.g.cs
+C:\Users\Bryan\Desktop\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\HomeBoxOffice\Index.cshtml.g.cs
+C:\Users\Bryan\Desktop\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\HomeClient\Index.cshtml.g.cs
+C:\Users\Bryan\Desktop\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\Bryan\Desktop\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\Bryan\Desktop\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Movie\Edit.cshtml.g.cs
+C:\Users\Bryan\Desktop\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Movie\Index.cshtml.g.cs
+C:\Users\Bryan\Desktop\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Movie\Profile.cshtml.g.cs
+C:\Users\Bryan\Desktop\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Purchase\BuyTickets.cshtml.g.cs
+C:\Users\Bryan\Desktop\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Purchase\ClientIndex.cshtml.g.cs
+C:\Users\Bryan\Desktop\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Purchase\MovieDates.cshtml.g.cs
+C:\Users\Bryan\Desktop\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Room\Edit.cshtml.g.cs
+C:\Users\Bryan\Desktop\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Room\Index.cshtml.g.cs
+C:\Users\Bryan\Desktop\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Room\Profile.cshtml.g.cs
+C:\Users\Bryan\Desktop\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Room\RoomSchedule.cshtml.g.cs
+C:\Users\Bryan\Desktop\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\Bryan\Desktop\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Bryan\Desktop\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Shared\_LayoutBoxOffice.cshtml.g.cs
+C:\Users\Bryan\Desktop\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Shared\_LayoutClient.cshtml.g.cs
+C:\Users\Bryan\Desktop\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Shared\_LayoutClientPurchasing.cshtml.g.cs
+C:\Users\Bryan\Desktop\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
+C:\Users\Bryan\Desktop\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Bryan\Desktop\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Shift\Edit.cshtml.g.cs
+C:\Users\Bryan\Desktop\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Shift\Index.cshtml.g.cs
+C:\Users\Bryan\Desktop\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\SpecialDate\Edit.cshtml.g.cs
+C:\Users\Bryan\Desktop\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\SpecialDate\Index.cshtml.g.cs
+C:\Users\Bryan\Desktop\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\SpecialUser\Edit.cshtml.g.cs
+C:\Users\Bryan\Desktop\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\SpecialUser\Index.cshtml.g.cs
+C:\Users\Bryan\Desktop\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\Bryan\Desktop\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\Bryan\Desktop\Cine+\Cine+\obj\Debug\net5.0\Cine+.RazorTargetAssemblyInfo.cache
+C:\Users\Bryan\Desktop\Cine+\Cine+\obj\Debug\net5.0\Cine+.RazorTargetAssemblyInfo.cs
+C:\Users\Bryan\Desktop\Cine+\Cine+\obj\Debug\net5.0\Cine+.Views.pdb
+C:\Users\Bryan\Desktop\Cine+\Cine+\obj\Debug\net5.0\Cine+.csproj.CopyComplete
+C:\Users\Bryan\Desktop\Cine+\Cine+\obj\Debug\net5.0\Cine+.dll
+C:\Users\Bryan\Desktop\Cine+\Cine+\obj\Debug\net5.0\ref\Cine+.dll
+C:\Users\Bryan\Desktop\Cine+\Cine+\obj\Debug\net5.0\Cine+.pdb
+C:\Users\Bryan\Desktop\Cine+\Cine+\obj\Debug\net5.0\Cine+.genruntimeconfig.cache
+C:\Users\Jose Alejandro\Documents\IS\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Purchase\PayTickets.cshtml.g.cs
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\appsettings.json
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\Cine+.exe
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\Cine+.deps.json
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\Cine+.runtimeconfig.json
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\Cine+.runtimeconfig.dev.json
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\Cine+.dll
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\ref\Cine+.dll
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\Cine+.pdb
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\Cine+.Views.dll
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\Cine+.Views.pdb
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\Humanizer.dll
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\Microsoft.Data.Sqlite.dll
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\SQLitePCLRaw.batteries_v2.dll
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\SQLitePCLRaw.nativelibrary.dll
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\SQLitePCLRaw.core.dll
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\System.Runtime.Caching.dll
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\runtimes\alpine-x64\native\libe_sqlite3.so
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\runtimes\linux-arm\native\libe_sqlite3.so
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\runtimes\linux-armel\native\libe_sqlite3.so
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\runtimes\linux-mips64\native\libe_sqlite3.so
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\obj\Debug\net5.0\Cine+.csprojAssemblyReference.cache
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\obj\Debug\net5.0\Cine+.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\obj\Debug\net5.0\Cine+.AssemblyInfoInputs.cache
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\obj\Debug\net5.0\Cine+.AssemblyInfo.cs
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\obj\Debug\net5.0\Cine+.csproj.CoreCompileInputs.cache
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\obj\Debug\net5.0\Cine+.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\obj\Debug\net5.0\Cine+.RazorAssemblyInfo.cache
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\obj\Debug\net5.0\Cine+.RazorAssemblyInfo.cs
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\obj\Debug\net5.0\staticwebassets\Cine+.StaticWebAssets.Manifest.cache
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\obj\Debug\net5.0\staticwebassets\Cine+.StaticWebAssets.xml
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\obj\Debug\net5.0\scopedcss\bundle\Cine+.styles.css
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\obj\Debug\net5.0\Cine+.TagHelpers.input.cache
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\obj\Debug\net5.0\Cine+.TagHelpers.output.cache
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\obj\Debug\net5.0\Cine+.RazorCoreGenerate.cache
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Client\Edit.cshtml.g.cs
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Client\Index.cshtml.g.cs
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Genre\Edit.cshtml.g.cs
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Genre\Index.cshtml.g.cs
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\HomeBoxOffice\Index.cshtml.g.cs
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\HomeClient\Index.cshtml.g.cs
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Movie\Edit.cshtml.g.cs
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Movie\Index.cshtml.g.cs
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Movie\Profile.cshtml.g.cs
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Purchase\BuyTickets.cshtml.g.cs
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Purchase\ClientIndex.cshtml.g.cs
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Purchase\MovieDates.cshtml.g.cs
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Purchase\PayTickets.cshtml.g.cs
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Room\Edit.cshtml.g.cs
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Room\Index.cshtml.g.cs
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Room\Profile.cshtml.g.cs
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Room\RoomSchedule.cshtml.g.cs
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Shared\_LayoutBoxOffice.cshtml.g.cs
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Shared\_LayoutClient.cshtml.g.cs
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Shared\_LayoutClientPurchasing.cshtml.g.cs
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Shift\Edit.cshtml.g.cs
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Shift\Index.cshtml.g.cs
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\SpecialDate\Edit.cshtml.g.cs
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\SpecialDate\Index.cshtml.g.cs
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\SpecialUser\Edit.cshtml.g.cs
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\SpecialUser\Index.cshtml.g.cs
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\obj\Debug\net5.0\Cine+.RazorTargetAssemblyInfo.cache
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\obj\Debug\net5.0\Cine+.RazorTargetAssemblyInfo.cs
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\obj\Debug\net5.0\Cine+.Views.pdb
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\obj\Debug\net5.0\Cine+.csproj.CopyComplete
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\obj\Debug\net5.0\Cine+.dll
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\obj\Debug\net5.0\ref\Cine+.dll
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\obj\Debug\net5.0\Cine+.pdb
+C:\Users\Bryan\Desktop\Bryan\Cine+\Cine+\obj\Debug\net5.0\Cine+.genruntimeconfig.cache
+G:\Cine+\Cine+\bin\Debug\net5.0\appsettings.Development.json
+G:\Cine+\Cine+\bin\Debug\net5.0\appsettings.json
+G:\Cine+\Cine+\bin\Debug\net5.0\Cine+.exe
+G:\Cine+\Cine+\bin\Debug\net5.0\Cine+.deps.json
+G:\Cine+\Cine+\bin\Debug\net5.0\Cine+.runtimeconfig.json
+G:\Cine+\Cine+\bin\Debug\net5.0\Cine+.runtimeconfig.dev.json
+G:\Cine+\Cine+\bin\Debug\net5.0\Cine+.dll
+G:\Cine+\Cine+\bin\Debug\net5.0\ref\Cine+.dll
+G:\Cine+\Cine+\bin\Debug\net5.0\Cine+.pdb
+G:\Cine+\Cine+\bin\Debug\net5.0\Cine+.Views.dll
+G:\Cine+\Cine+\bin\Debug\net5.0\Cine+.Views.pdb
+G:\Cine+\Cine+\bin\Debug\net5.0\Humanizer.dll
+G:\Cine+\Cine+\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+G:\Cine+\Cine+\bin\Debug\net5.0\Microsoft.Data.Sqlite.dll
+G:\Cine+\Cine+\bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll
+G:\Cine+\Cine+\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+G:\Cine+\Cine+\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+G:\Cine+\Cine+\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+G:\Cine+\Cine+\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+G:\Cine+\Cine+\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+G:\Cine+\Cine+\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+G:\Cine+\Cine+\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+G:\Cine+\Cine+\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+G:\Cine+\Cine+\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+G:\Cine+\Cine+\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+G:\Cine+\Cine+\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+G:\Cine+\Cine+\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+G:\Cine+\Cine+\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+G:\Cine+\Cine+\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+G:\Cine+\Cine+\bin\Debug\net5.0\Newtonsoft.Json.dll
+G:\Cine+\Cine+\bin\Debug\net5.0\SQLitePCLRaw.batteries_v2.dll
+G:\Cine+\Cine+\bin\Debug\net5.0\SQLitePCLRaw.nativelibrary.dll
+G:\Cine+\Cine+\bin\Debug\net5.0\SQLitePCLRaw.core.dll
+G:\Cine+\Cine+\bin\Debug\net5.0\SQLitePCLRaw.provider.dynamic_cdecl.dll
+G:\Cine+\Cine+\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+G:\Cine+\Cine+\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+G:\Cine+\Cine+\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+G:\Cine+\Cine+\bin\Debug\net5.0\System.Runtime.Caching.dll
+G:\Cine+\Cine+\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+G:\Cine+\Cine+\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+G:\Cine+\Cine+\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+G:\Cine+\Cine+\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+G:\Cine+\Cine+\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+G:\Cine+\Cine+\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+G:\Cine+\Cine+\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+G:\Cine+\Cine+\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+G:\Cine+\Cine+\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+G:\Cine+\Cine+\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+G:\Cine+\Cine+\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+G:\Cine+\Cine+\bin\Debug\net5.0\runtimes\alpine-x64\native\libe_sqlite3.so
+G:\Cine+\Cine+\bin\Debug\net5.0\runtimes\linux-arm\native\libe_sqlite3.so
+G:\Cine+\Cine+\bin\Debug\net5.0\runtimes\linux-arm64\native\libe_sqlite3.so
+G:\Cine+\Cine+\bin\Debug\net5.0\runtimes\linux-armel\native\libe_sqlite3.so
+G:\Cine+\Cine+\bin\Debug\net5.0\runtimes\linux-mips64\native\libe_sqlite3.so
+G:\Cine+\Cine+\bin\Debug\net5.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
+G:\Cine+\Cine+\bin\Debug\net5.0\runtimes\linux-x64\native\libe_sqlite3.so
+G:\Cine+\Cine+\bin\Debug\net5.0\runtimes\linux-x86\native\libe_sqlite3.so
+G:\Cine+\Cine+\bin\Debug\net5.0\runtimes\osx-x64\native\libe_sqlite3.dylib
+G:\Cine+\Cine+\bin\Debug\net5.0\runtimes\win-arm\native\e_sqlite3.dll
+G:\Cine+\Cine+\bin\Debug\net5.0\runtimes\win-arm64\native\e_sqlite3.dll
+G:\Cine+\Cine+\bin\Debug\net5.0\runtimes\win-x64\native\e_sqlite3.dll
+G:\Cine+\Cine+\bin\Debug\net5.0\runtimes\win-x86\native\e_sqlite3.dll
+G:\Cine+\Cine+\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+G:\Cine+\Cine+\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+G:\Cine+\Cine+\obj\Debug\net5.0\Cine+.csprojAssemblyReference.cache
+G:\Cine+\Cine+\obj\Debug\net5.0\Cine+.GeneratedMSBuildEditorConfig.editorconfig
+G:\Cine+\Cine+\obj\Debug\net5.0\Cine+.AssemblyInfoInputs.cache
+G:\Cine+\Cine+\obj\Debug\net5.0\Cine+.AssemblyInfo.cs
+G:\Cine+\Cine+\obj\Debug\net5.0\Cine+.csproj.CoreCompileInputs.cache
+G:\Cine+\Cine+\obj\Debug\net5.0\Cine+.MvcApplicationPartsAssemblyInfo.cache
+G:\Cine+\Cine+\obj\Debug\net5.0\Cine+.RazorAssemblyInfo.cache
+G:\Cine+\Cine+\obj\Debug\net5.0\Cine+.RazorAssemblyInfo.cs
+G:\Cine+\Cine+\obj\Debug\net5.0\staticwebassets\Cine+.StaticWebAssets.Manifest.cache
+G:\Cine+\Cine+\obj\Debug\net5.0\staticwebassets\Cine+.StaticWebAssets.xml
+G:\Cine+\Cine+\obj\Debug\net5.0\scopedcss\bundle\Cine+.styles.css
+G:\Cine+\Cine+\obj\Debug\net5.0\Cine+.TagHelpers.input.cache
+G:\Cine+\Cine+\obj\Debug\net5.0\Cine+.TagHelpers.output.cache
+G:\Cine+\Cine+\obj\Debug\net5.0\Cine+.RazorCoreGenerate.cache
+G:\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Client\Edit.cshtml.g.cs
+G:\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Client\Index.cshtml.g.cs
+G:\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Genre\Edit.cshtml.g.cs
+G:\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Genre\Index.cshtml.g.cs
+G:\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\HomeBoxOffice\Index.cshtml.g.cs
+G:\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\HomeClient\Index.cshtml.g.cs
+G:\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+G:\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
+G:\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Movie\Edit.cshtml.g.cs
+G:\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Movie\Index.cshtml.g.cs
+G:\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Movie\Profile.cshtml.g.cs
+G:\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Purchase\BuyTickets.cshtml.g.cs
+G:\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Purchase\ClientIndex.cshtml.g.cs
+G:\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Purchase\MovieDates.cshtml.g.cs
+G:\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Purchase\PayTickets.cshtml.g.cs
+G:\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Room\Edit.cshtml.g.cs
+G:\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Room\Index.cshtml.g.cs
+G:\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Room\Profile.cshtml.g.cs
+G:\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Room\RoomSchedule.cshtml.g.cs
+G:\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
+G:\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+G:\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Shared\_LayoutBoxOffice.cshtml.g.cs
+G:\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Shared\_LayoutClient.cshtml.g.cs
+G:\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Shared\_LayoutClientPurchasing.cshtml.g.cs
+G:\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
+G:\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+G:\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Shift\Edit.cshtml.g.cs
+G:\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Shift\Index.cshtml.g.cs
+G:\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\SpecialDate\Edit.cshtml.g.cs
+G:\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\SpecialDate\Index.cshtml.g.cs
+G:\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\SpecialUser\Edit.cshtml.g.cs
+G:\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\SpecialUser\Index.cshtml.g.cs
+G:\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+G:\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+G:\Cine+\Cine+\obj\Debug\net5.0\Cine+.RazorTargetAssemblyInfo.cache
+G:\Cine+\Cine+\obj\Debug\net5.0\Cine+.RazorTargetAssemblyInfo.cs
+G:\Cine+\Cine+\obj\Debug\net5.0\Cine+.Views.pdb
+G:\Cine+\Cine+\obj\Debug\net5.0\Cine+.csproj.CopyComplete
+G:\Cine+\Cine+\obj\Debug\net5.0\Cine+.dll
+G:\Cine+\Cine+\obj\Debug\net5.0\ref\Cine+.dll
+G:\Cine+\Cine+\obj\Debug\net5.0\Cine+.pdb
+G:\Cine+\Cine+\obj\Debug\net5.0\Cine+.genruntimeconfig.cache
+C:\Users\Jose Alejandro\Documents\IS\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Purchase\CalculateImport.cshtml.g.cs
+C:\Users\Jose Alejandro\Documents\IS\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Purchase\ClientPurchases.cshtml.g.cs
+C:\Users\Jose Alejandro\Documents\IS\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Purchase\ReturnTickets.cshtml.g.cs
+C:\Users\Jose Alejandro\Documents\IS\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Purchase\DeletePurchase.cshtml.g.cs
+C:\Users\Jose Alejandro\Documents\IS\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Membership\Subscribe.cshtml.g.cs
+C:\Users\Jose Alejandro\Documents\IS\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Membership\Index.cshtml.g.cs
+C:\Users\Jose Alejandro\Documents\IS\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Membership\Unsubscribe.cshtml.g.cs
+C:\Users\Jose Alejandro\Documents\IS\Cine+\Cine+\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Jose Alejandro\Documents\IS\Cine+\Cine+\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Jose Alejandro\Documents\IS\Cine+\Cine+\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Jose Alejandro\Documents\IS\Cine+\Cine+\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Jose Alejandro\Documents\IS\Cine+\Cine+\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\Jose Alejandro\Documents\IS\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Purchase\Billboard.cshtml.g.cs
+C:\Users\Jose Alejandro\Documents\IS\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\Purchase\Index.cshtml.g.cs
+C:\Users\Jose Alejandro\Documents\IS\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\HomeClient\Recommendation.cshtml.g.cs
+C:\Users\Jose Alejandro\Documents\IS\Cine+\Cine+\obj\Debug\net5.0\Razor\Views\HomeBoxOffice\TodaysBillboard.cshtml.g.cs
+C:\Users\Jose Alejandro\Documents\IS\Cine+\Cine+\bin\Debug\net5.0\System.Web.Mvc.dll
+C:\Users\Jose Alejandro\Documents\IS\Cine+\Cine+\bin\Debug\net5.0\System.Web.Razor.dll
+C:\Users\Jose Alejandro\Documents\IS\Cine+\Cine+\bin\Debug\net5.0\System.Web.Helpers.dll
+C:\Users\Jose Alejandro\Documents\IS\Cine+\Cine+\bin\Debug\net5.0\System.Web.WebPages.Deployment.dll
+C:\Users\Jose Alejandro\Documents\IS\Cine+\Cine+\bin\Debug\net5.0\System.Web.WebPages.Razor.dll
+C:\Users\Jose Alejandro\Documents\IS\Cine+\Cine+\bin\Debug\net5.0\System.Web.WebPages.dll
+C:\Users\Jose Alejandro\Documents\IS\Cine+\Cine+\bin\Debug\net5.0\Microsoft.Web.Infrastructure.dll
+C:\Users\Jose Alejandro\Documents\IS\Cine+\Cine+\bin\Debug\net5.0\Rotativa.dll

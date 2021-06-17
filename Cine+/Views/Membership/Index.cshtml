@@ -1,0 +1,31 @@
+﻿@model List<MembershipIndexViewModel>
+@{
+    Layout = "_LayoutBoxOffice";
+ }
+
+<div id="table">
+    <table class="table my-2 text-center table-light">
+        <tr>
+            <th>Name</th>
+            <th>Last Name</th>
+            <th>Membership ID</th>
+            <th>Points</th>
+            <th></th>
+        </tr>
+        @foreach (var i in Model)
+        {
+    <tr>
+        <td> @i.Name </td>
+        <td> @i.LastName </td>
+        <td> @i.MembershipID </td>
+        <td> @i.Points</td>
+        <td class="text-center">
+            <form asp-action="Delete" method="post">
+                <input type="hidden" name="MembershipID" value="@i.MembershipID" />
+                <button type="submit" class="btn btn-sm btn-primary fa fa-trash"></button>
+            </form>
+        </td>
+    </tr>
+        }
+    </table>
+</div>

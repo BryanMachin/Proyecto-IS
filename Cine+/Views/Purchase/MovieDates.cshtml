@@ -1,0 +1,39 @@
+﻿@model ReservationViewModel
+@{
+    Layout = "_LayoutClientPurchasing";
+}
+<div class="jumbotron margin text-white" style="max-width:20rem">
+    <h1 class="display-3">@Model.Movie.Title</h1>
+    <p class="lead">@Model.Movie.GenreName  @Model.Movie.Nationality</p>
+    <hr class="my-4">
+    <p>@Model.Movie.Synopsis</p>
+
+    <div id="ReservationViewModel" class=" fixed bg-secondary mb-3 breadcrumb margin pos">
+        <table class="table my-2 text-center table-light">
+            <tr>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Available Seats</th>
+                <th>Ticket Price</th>
+                <th></th>
+            </tr>
+            @for (int i = 0; i < Model.Presentations.Count; i++)
+            {
+                <tr>
+                    <td>@Model.Presentations[i].Date.Month/@Model.Presentations[i].Date.Day/@Model.Presentations[i].Date.Year</td>
+                    <td>@Model.Presentations[i].Shift.Time.Hour:@Model.Presentations[i].Shift.Time.Minute</td>
+                    <td>@Model.Presentations[i].Availability</td>
+                    <td>@Model.Presentations[i].TicketPrice</td>
+                    <td>
+                        <a asp-action="BuyTickets" class="btn btn-sm btn-success"
+                           asp-route-MovieID="@Model.Movie.MovieID" asp-route-RoomID="@Model.Presentations[i].RoomID"
+                           asp-route-ShiftID="@Model.Presentations[i].ShiftID" asp-route-Date="@Model.Presentations[i].Date">
+                            Buy Tickets
+                        </a>
+                    </td>
+                </tr>
+            }
+
+        </table>
+    </div>
+</div>

@@ -1,0 +1,41 @@
+﻿@model List<PurchaseIndexViewModel>
+@{
+    Layout = "_LayoutClient";
+}
+
+@if (Model != null)
+{
+    <table class="table my-2 table-bordered table-striped table-sm border table-warning">
+        <tr>
+            <th>Buyer</th>
+            <th>Movie</th>
+            <th>Room</th>
+            <th>Date</th>
+            <th>Shift</th>
+            <th>Purchase ID</th>
+        </tr>
+        @foreach (var i in Model)
+        {
+            <tr>
+                <td> @i.ClientName @i.ClientLastName</td>
+                <td> @i.MovieTitle</td>
+                <td> @i.RoomName </td>
+                <td> @i.Date.Month/@i.Date.Day/@i.Date.Year</td>
+                <td> @i.ShiftTime.Hour : @i.ShiftTime.Minute </td>
+                <td> @i.PurchaseID </td>
+            </tr>
+        }
+    </table>
+
+}
+else
+{
+   
+       <p class="display-6 margin">Currently there are no purchases</p>
+    
+}
+<div class="text-center">
+    <a asp-controller="HomeBoxOffice" asp-action="" class="btn btn-info">
+        Back
+    </a>
+</div>

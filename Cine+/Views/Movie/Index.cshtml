@@ -1,34 +1,40 @@
 ﻿@model IEnumerable<Movie>
 
-<table class="table table-striped text-center table-light">
-    <tr>
-        <th>Title</th>
-        <th>Nationality</th>
-        <th>Genre</th>
-        <th>Rating</th>
-        <th>Synopsis</th>
-        <th></th>
-    </tr>
-    @foreach (var i in Model)
-    {
-<tr>
-    <td> @i.Title </td>
-    <td> @i.Nationality </td>
-    <td> @i.GenreName </td> 
-    <td> @i.Rating </td>
-    <td> @i.Synopsis </td>
-    <td class="text-center">
-        <form asp-action="Delete" method="post">
-            <a asp-action="Edit" class="btn btn-sm btn-warning fa fa-pencil-alt" asp-route-MovieID="@i.MovieID"></a>
-            <input type="hidden" name="MovieID" value="@i.MovieID" />
-            <button type="submit" class="btn btn-sm btn-primary fa fa-trash"></button>
-        </form>
-    </td>
-</tr>
-    }
-</table>
-<div class="text-center">
+
+
+<div id=table>
+    <table class="table my-2 text-center table-light">
+        <tr>
+            <th>Title</th>
+            <th>Nationality</th>
+            <th>Genre</th>
+            <th>Rating</th>
+            <th>Synopsis</th>
+            <th></th>
+        </tr>
+        @foreach (var i in Model)
+        {
+            <tr>
+                <td valign="middle"> @i.Title </td>
+                <td valign="middle"> @i.Nationality </td>
+                <td valign="middle"> @i.GenreName </td>
+                <td valign="middle"> @i.Rating </td>
+                <td valign="middle"> @i.Synopsis </td>
+                <td valign="middle" class="text-center">
+                    <form asp-action="Delete" method="post">
+                        <a asp-action="Edit" class="btn btn-sm btn-warning fa fa-pencil-alt" asp-route-MovieID="@i.MovieID"></a>
+                        <input type="hidden" name="MovieID" value="@i.MovieID" />
+                        <button type="submit" class="btn btn-sm btn-primary fa fa-trash"></button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </table>    
+</div>
+
+<div id="add"  class="text-center">
     <a asp-action="Create" class="btn btn-info">
         Add Movie
     </a>
 </div>
+        

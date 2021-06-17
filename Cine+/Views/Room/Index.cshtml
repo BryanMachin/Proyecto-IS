@@ -1,30 +1,33 @@
 ﻿@model IEnumerable<Room>
 
-<table class="table my-2 table-striped table-light">
-    <tr>
-        <th>Name</th>
-        <th>Capacity</th>
-        <th></th>
-    </tr>
-    @foreach (var i in Model)
-    {
-        <tr>
-            <td><a asp-action="Profile" asp-route-RoomID="@i.RoomID"> @i.Name </a></td>
-            <td> @i.Capacity </td>
-            <td class="text-center">
-                <form asp-action="Delete" method="post">
-                    <a asp-action="Edit" class="btn btn-sm btn-warning fa fa-pencil-alt" asp-route-RoomID="@i.RoomID">                       
-                    </a>
-                    <input type="hidden" name="RoomID" value="@i.RoomID" />
-                    <button type="submit" class="btn btn-sm btn-primary fa fa-trash">                  
-                    </button>
-                </form>
-            </td>
-        </tr>
-    }
-</table>
-<div class="text-center">
-    <a asp-action="Create" class="btn btn-info">
-        Add Room
-    </a>
+    <div id="table">
+        <table class="table my-2 text-center table-light">
+            <tr>
+                <th>Name</th>
+                <th>Capacity</th>
+                <th></th>
+            </tr>
+            @foreach (var i in Model)
+            {
+                <tr>
+                    <td valign="middle"><a asp-action="Profile" asp-route-RoomID="@i.RoomID"> @i.Name </a></td>
+                    <td valign="middle"> @i.Capacity </td>
+                    <td valign="middle" class="text-center">
+                        <form asp-action="Delete" method="post">
+                            <a asp-action="Edit" class="btn btn-sm btn-warning fa fa-pencil-alt" asp-route-RoomID="@i.RoomID">
+                            </a>
+                            <input type="hidden" name="RoomID" value="@i.RoomID" />
+                            <button type="submit" class="btn btn-sm btn-primary fa fa-trash">
+                            </button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </table>
 </div>
+
+        <div id="add" class="text-center">
+            <a asp-action="Create" class="btn btn-info">
+                Add Room
+            </a>
+        </div>

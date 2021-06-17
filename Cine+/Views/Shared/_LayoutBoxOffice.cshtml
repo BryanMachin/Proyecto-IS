@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Cine_</title>
+    <title>Cine+</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="~/css/BoxOfficeSS.css" />
@@ -16,17 +16,40 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    Cine
-                    <i class="fa fa-plus" aria-hidden="true"></i>
+                <a class="navbar-brand text-light" asp-controller="HomeBoxOffice" asp-action="Index">
+                    <i class="fa fa-home" aria-hidden="true" style="position:fixed;top:3%;font-size:20px"></i>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
+                <a id="settings" class="nav-link" href="#" data-toggle="dropdown">
+                    <i id="settings" class="fa fa-cog" aria-hidden="true"></i>
+                </a>
+                <div id="SettingDropdown" class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Link 1</a>
+                    <a class="dropdown-item" href="#">Link 2</a>
+                    <a class="dropdown-item" href="#">Link 3</a>
+                </div>
                 <div class="collapse navbar-collapse" id="navbarColor01">
-                    <ul class="navbar-nav me-auto">
-       
+                    <ul class="navbar-nav m-auto">
+                        <li class="nav-item dropdown">
+                            <a id="buttonNav" class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                                Purchases
+                            </a>
+                            <div id="Dropdown" class="dropdown-menu">
+                                <a class="dropdown-item" asp-controller="Purchase" asp-action="Index">Purchases</a>
+                                <a class="dropdown-item" asp-controller="HomeBoxOffice" asp-action="TodaysBillboard">Today's Billboard</a>
+                                <a class="dropdown-item" asp-controller="Purchase" asp-action="ReturnTickets">Return Tickets</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a id="buttonNav" class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                                Membership
+                            </a>
+                            <div id="Dropdown" class="dropdown-menu">
+                                <a class="dropdown-item" asp-controller="Membership" asp-action="Index">Members</a>
+                                <a class="dropdown-item" asp-controller="Membership" asp-action="Subscribe">Subscribe</a>
+                                <a class="dropdown-item" asp-controller="Membership" asp-action="Unsubscribe">Unsubscribe</a>
+                            </div>
+                        </li>
+
                     </ul>
                 </div>
             </div>
@@ -40,7 +63,8 @@
 
     <footer class="footer text-white">
         <div class="container">
-            &copy; 2021 - Cine Plus
+            &copy; 2021 - Cine
+            <i class="fa fa-plus text-primary" aria-hidden="true"></i>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

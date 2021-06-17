@@ -21,14 +21,18 @@ namespace Cine_.Controllers
         [HttpPost]
         public ActionResult Edit(SpecialDate specialDate)
         {
-            repository.SaveSpecialDate(specialDate);
-            return RedirectToAction("Index");
+            if (ModelState.IsValid)
+            {
+                repository.SaveSpecialDate(specialDate);
+                return RedirectToAction("Index");
+            }
+            return View(specialDate);
+            
         }
 
-        public ActionResult Create()
-        {
-            return RedirectToAction("Edit", Guid.Empty);
-        }
+        public ActionResult Create() => View("Edit", new SpecialDate());
+            
+        
 
         public ActionResult Delete(Guid SpecialDateID)
         {

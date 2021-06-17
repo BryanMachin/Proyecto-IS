@@ -1,0 +1,99 @@
+﻿@model PayTicketsViewModel
+@{
+    Layout = "_LayoutClientPurchasing";
+}
+
+<div class="margin mx-auto card text-white bg-light mb-3" style="height: 90%; width:90%">
+    <div class="card-header text-dark">Pay Tickets</div>
+    <div class="card-body d-xxl-table-row">
+
+        <form asp-action="PayTickets" method="post">
+            <input type="hidden" asp-for="ClientID" />
+            <input type="hidden" asp-for="MovieID" />
+            <input type="hidden" asp-for="RoomID" />
+            <input type="hidden" asp-for="ShiftID" />
+            <input type="hidden" asp-for="Date" />
+            <input type="hidden" asp-for="Tickets" />
+            <input type="hidden" asp-for="SpecialUserID" />
+            <input type="hidden" asp-for="payWithPoints" />
+            <input type="hidden" asp-for="MoneyImport" />
+            <input type="hidden" asp-for="PointsImport" />
+
+
+            @if (Model.payWithPoints)
+            {
+                <div class="form-group">
+                    <label class="text-black-50">Membership ID </label>
+                    @if (ViewBag.ErrorMessage!= null)
+                    {
+                        <p>@ViewBag.ErrorMessage</p>
+                    }
+                    <input asp-for="MembershipID" class="form-control" />
+                </div>
+                <div class="margin text-center">
+                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter">
+                        Next
+                    </button>
+
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Confirmation</h5>
+                                </div>
+                                <div class="modal-body text-black-50">
+                                    <p>You are about to spend @Model.PointsImport membership points, are you sure you want to continue?</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-info" type="submit"> Yes </button>
+                                    <button type="button" class="btn btn-dark" data-dismiss="modal">No</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a asp-action="ClientIndex" class="btn btn-dark">  Cancel </a>
+                </div>
+            }
+            else
+            {
+        <div class="form-group">
+            <label class="text-black-50">Credit Card ID </label>
+            @if (ViewBag.ErrorMessage != null)
+            {
+                <div class="text-primary">
+                <p>@ViewBag.ErrorMessage</p>
+                    </div>
+            }
+            <input asp-for="CreditCardID" class="form-control" />
+        </div>
+                <div class="margin text-center">
+                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter">
+                        Next
+                    </button>
+
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Confirmation</h5>
+                                </div>
+                                <div class="modal-body text-black-50">
+                                    <p>You are about to spend @Model.MoneyImport USD, are you sure you want to continue?</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-info" type="submit"> Yes </button>
+                                    <button type="button" class="btn btn-dark" data-dismiss="modal">No</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a asp-action="Billboard" class="btn btn-dark">  Cancel </a>
+                </div>
+            }
+
+
+        </form>
+    </div>
+</div>
+
+

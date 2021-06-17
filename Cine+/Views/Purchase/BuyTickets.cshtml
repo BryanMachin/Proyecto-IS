@@ -1,0 +1,81 @@
+﻿@model PurchaseViewModel
+@{
+    Layout = "_LayoutClientPurchasing";
+}
+
+    <div class="margin mx-auto card text-white bg-light mb-3" style="max-width:40rem;">
+        <div class="card-header text-dark">Buy tickets</div>
+        <div class="card-body d-xxl-table-row">
+
+            <form asp-action="BuyTickets" method="post">
+                <input type="hidden" asp-for="Client.ClientID" />
+
+
+                <input type="hidden" asp-for="MovieID" />
+                <input type="hidden" asp-for="RoomID" />
+                <input type="hidden" asp-for="ShiftID" />
+                <input type="hidden" asp-for="Date" />
+                <input type="hidden" asp-for="SpecialUserSelected" />
+
+
+                <div class="form-group text-dark">
+                    <label asp-for="Client.Name"> </label>
+                    <div><span asp-validation-for="Client.Name" class="text-primary"></span></div>
+                    <input asp-for="Client.Name" autocomplete="off" class="form-control" />
+                </div>
+
+                <div class="form-group margin text-dark">
+                    <label asp-for="Client.LastName"> </label>
+                    <div><span asp-validation-for="Client.LastName" class="text-primary"></span></div>
+                    <input asp-for="Client.LastName" autocomplete="off" class="form-control" />
+                </div>
+
+                <div class="form-group margin text-dark">
+                    <label asp-for="Client.IdentityNumber"> </label>
+                    @if (ViewBag.ErrorMessage != null)
+                    {
+                        <div class="text-primary">
+                            <p>@ViewBag.ErrorMessage</p>
+                        </div>
+                    }
+                    <div><span asp-validation-for="Client.IdentityNumber" class="text-primary"></span></div>
+                    <input asp-for="Client.IdentityNumber" class="form-control" />
+                </div>
+
+                <div class="form-group margin text-dark">
+                    <label asp-for="Tickets"> </label>
+                    <div><span asp-validation-for="Tickets" class="text-primary"></span></div>
+                    <input asp-for="Tickets" autocomplete="off" min="1" class="form-control" />
+                </div>
+
+
+
+                <div class="form-group margin text-dark">
+                    <label asp-for="SpecialUserSelected"> </label>
+                    <select name="SpecialUserSelected">
+                        <option value="">None</option>
+                        @foreach (var item in Model.SpecialUsers)
+                        {
+                            <option value="@item.Name">@item.Name</option>
+                        }
+                    </select>
+                </div>
+
+                @if (ViewBag.NoSeatsAvailable != null)
+                {
+                    <div class="text-primary margin">
+                        <p>
+                            @ViewBag.NoSeatsAvailable
+                        </p>
+                    </div>
+                }
+
+                <div class="margin text-center">
+                    <button class="btn btn-info" type="submit"> Save </button>
+                    <a asp-action="ClientIndex" class="btn btn-dark">  Cancel </a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+

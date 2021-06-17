@@ -16,6 +16,7 @@ namespace Cine_.Models.Entities
         public string Name { get; set; }
 
         [Required(ErrorMessage = "Please enter a date")]
+
         public DateTime Date { get; set; }
 
         [Range(0, 100, ErrorMessage = "Discount Rate value must be between 0 and 100")]

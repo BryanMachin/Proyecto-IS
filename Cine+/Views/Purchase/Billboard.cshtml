@@ -1,0 +1,25 @@
+﻿@model IEnumerable<Movie>
+@{
+    Layout = "_LayoutClient";
+ }
+<div id="table">
+<table class="table text-center table-light">
+    <tr>
+        <th>Title</th>
+        <th>Nationality</th>
+        <th>Genre</th>
+        <th>Rating</th>
+        <th>Synopsis</th>
+    </tr>
+    @foreach (var i in Model)
+    {
+        <tr>
+            <td  valign="middle"><a asp-action="MovieDates" asp-route-MovieID="@i.MovieID"/> @i.Title </td>
+            <td valign="middle">@i.Nationality </td>
+            <td valign="middle">@i.GenreName </td>
+            <td valign="middle">@i.Rating </td>
+            <td valign="middle">@i.Synopsis </td>
+        </tr>
+    }
+</table>
+</div>

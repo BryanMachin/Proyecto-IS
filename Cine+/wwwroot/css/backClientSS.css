@@ -1,0 +1,146 @@
+﻿body {
+    background-image: url(../images/cinema3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 90vh;
+    color:ButtonHighlight;
+}
+
+.header .navbar {
+    background-color:#303030 !important;
+    border-color: transparent;
+}
+
+.navbar {    
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    height: 60px;
+    padding: 25px 0;
+}
+
+.navbar li a:visited {
+    color: white;
+}
+
+#buttonNav:hover {    
+    color: ButtonHighlight;
+}
+
+
+#settings {
+    font-size: 25px;
+    color: white;
+    position: fixed;
+    right: 1%;
+    top: 2.5%;
+}
+
+#SettingDropdown {
+    background-color:#303030;
+    border-color:transparent;
+    position: fixed;
+    right: 0%;
+    top: 10%;
+    font-family: 'Agency FB';
+    font-size: 18px;
+}
+
+#Dropdown {
+    background-color: #303030;
+    border-color: transparent;
+    font-family: 'Agency FB';
+    font-size: 18px;
+}
+
+.navbar a {    
+    color: white;
+    font-family: 'Agency FB';
+    font-size: 16px;
+}
+
+.navbar i {
+    font-size: 40px;
+}
+
+
+#buttonNav {
+    color: white;
+    font-size: 20px;
+    font-family: 'Arial Rounded MT',sans-serif;
+    padding: 20px;
+}
+
+#table {
+    background: #eeeeee;
+    opacity: 97%;
+    overflow: auto;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    border-right: #6699CC 1px solid;
+    border-top: #999999 1px solid;
+    border-left: #6699CC 1px solid;
+    border-bottom: #6699CC 1px solid;
+    scrollbar-arrow-color: #999999;
+    scrollbar-face-color: #666666;
+    scrollbar-track-color: #3333333;
+    position: absolute;
+    top: 20%;
+    max-height: 70%;
+    width: 80%;
+    margin-bottom: auto;
+}
+
+#add {
+    position: fixed;
+    top: 12%;
+    left: 45%;
+}
+
+#tableSchedule {
+    background: #eeeeee;
+    opacity: 95%;
+    overflow: auto;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    border-right: #6699CC 1px solid;
+    border-top: #999999 1px solid;
+    border-left: #6699CC 1px solid;
+    border-bottom: #6699CC 1px solid;
+    scrollbar-arrow-color: #999999;
+    scrollbar-face-color: #666666;
+    scrollbar-track-color: #3333333;
+    position: fixed;
+    top: 15%;
+    right: 5%;
+    max-height: 40%;
+    width: 60%;
+}
+
+#ReservationViewModel {
+    background: #eeeeee;
+    opacity: 96%;
+    overflow: auto;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    border-right: #6699CC 1px solid;
+    border-top: #999999 1px solid;
+    border-left: #6699CC 1px solid;
+    border-bottom: #6699CC 1px solid;
+    scrollbar-arrow-color: #999999;
+    scrollbar-face-color: #666666;
+    scrollbar-track-color: #3333333;
+    position: fixed;
+    top: 25%;
+    right: 10%;
+    max-height: 50%;
+    width: 55%;
+
+
+}

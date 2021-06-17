@@ -26,6 +26,7 @@ namespace Cine_.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("IdentityNumber")
+                        .IsRequired()
                         .HasMaxLength(11)
                         .HasColumnType("nvarchar(11)");
 
@@ -42,25 +43,6 @@ namespace Cine_.Migrations
                     b.HasKey("ClientID");
 
                     b.ToTable("Clients");
-                });
-
-            modelBuilder.Entity("Cine_.Models.Entities.DiscountType", b =>
-                {
-                    b.Property<Guid>("DiscountTypeID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<float>("DiscountRate")
-                        .HasColumnType("real");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(127)
-                        .HasColumnType("nvarchar(127)");
-
-                    b.HasKey("DiscountTypeID");
-
-                    b.ToTable("DiscountTypes");
                 });
 
             modelBuilder.Entity("Cine_.Models.Entities.Genre", b =>
@@ -166,8 +148,8 @@ namespace Cine_.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasMaxLength(127)
-                        .HasColumnType("nvarchar(127)");
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
 
                     b.HasKey("SpecialDateID");
 
@@ -180,9 +162,33 @@ namespace Cine_.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<float>("DiscountRate")
+                        .HasColumnType("real");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
                     b.HasKey("SpecialUserID");
 
                     b.ToTable("SpecialUsers");
+                });
+
+            modelBuilder.Entity("Cine_.Models.Relations.Membership", b =>
+                {
+                    b.Property<Guid>("ClientID")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("MembershipID")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Points")
+                        .HasColumnType("int");
+
+                    b.HasKey("ClientID");
+
+                    b.ToTable("Memberships");
                 });
 
             modelBuilder.Entity("Cine_.Models.Relations.Presentation", b =>
@@ -214,6 +220,62 @@ namespace Cine_.Migrations
                     b.ToTable("Presentations");
                 });
 
+            modelBuilder.Entity("Cine_.Models.Relations.Purchase", b =>
+                {
+                    b.Property<Guid>("ClientID")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("MovieID")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("RoomID")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("ShiftID")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("CreditCardID")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("MembershipID")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<float>("MoneyImport")
+                        .HasColumnType("real");
+
+                    b.Property<int>("PointsImport")
+                        .HasColumnType("int");
+
+                    b.Property<string>("PurchaseID")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("SpecialUserSelected")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Tickets")
+                        .HasColumnType("int");
+
+                    b.HasKey("ClientID", "MovieID", "RoomID", "ShiftID", "Date");
+
+                    b.HasIndex("MovieID", "RoomID", "ShiftID", "Date");
+
+                    b.ToTable("Purchases");
+                });
+
+            modelBuilder.Entity("Cine_.Models.Relations.Membership", b =>
+                {
+                    b.HasOne("Cine_.Models.Entities.Client", "Client")
+                        .WithMany()
+                        .HasForeignKey("ClientID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Client");
+                });
+
             modelBuilder.Entity("Cine_.Models.Relations.Presentation", b =>
                 {
                     b.HasOne("Cine_.Models.Entities.Movie", "Movie")
@@ -239,6 +301,25 @@ namespace Cine_.Migrations
                     b.Navigation("Room");
 
                     b.Navigation("Shift");
+                });
+
+            modelBuilder.Entity("Cine_.Models.Relations.Purchase", b =>
+                {
+                    b.HasOne("Cine_.Models.Entities.Client", "Client")
+                        .WithMany()
+                        .HasForeignKey("ClientID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Cine_.Models.Relations.Presentation", "Presentation")
+                        .WithMany()
+                        .HasForeignKey("MovieID", "RoomID", "ShiftID", "Date")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Client");
+
+                    b.Navigation("Presentation");
                 });
 #pragma warning restore 612, 618
         }

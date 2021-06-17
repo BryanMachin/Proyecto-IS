@@ -10,7 +10,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using Cine_.Models.Data;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Data.Sqlite;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Authentication;
+
 
 namespace Cine_
 {
@@ -34,12 +37,21 @@ namespace Cine_
                 options.UseSqlServer(
                     Configuration["Data:Cine_:ConnectionString"]));
 
+            services.AddDbContext<AppIdentityDbContext>(options =>
+                 options.UseSqlServer(
+                 Configuration["Data:CineIdentity:ConnectionString"]));
+            
+            services.AddIdentity<IdentityUser, IdentityRole>()
+                .AddEntityFrameworkStores<AppIdentityDbContext>()
+                .AddDefaultTokenProviders();
+
+            
             services.AddTransient<IRepository, EFRepository>();
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -47,7 +59,6 @@ namespace Cine_
             else
             {
                 app.UseExceptionHandler("/Home/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
             app.UseHttpsRedirection();
@@ -58,13 +69,14 @@ namespace Cine_
             app.UseRouting();
 
             app.UseAuthorization();
-
+            app.UseAuthentication();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=HomeClient}/{action=Index}/{id?}");
             });
+            
         }
     }
 }

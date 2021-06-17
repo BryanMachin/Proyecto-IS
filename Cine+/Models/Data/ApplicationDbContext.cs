@@ -26,12 +26,17 @@ namespace Cine_.Models.Data
 
         public DbSet<SpecialUser> SpecialUsers { get; set; }
 
-        public DbSet<DiscountType> DiscountTypes { get; set; }
-
         public DbSet<Presentation> Presentations { get; set; }
+
+        public DbSet<Membership> Memberships { get; set; }
+        public DbSet<Purchase> Purchases { get; set; }
+
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Presentation>().HasKey(m => new { m.MovieID, m.RoomID, m.ShiftID, m.Date });
+            
+            modelBuilder.Entity<Purchase>().HasKey(m => new {m.ClientID, m.MovieID, m.RoomID, m.ShiftID, m.Date});
 
         }
     }

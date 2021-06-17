@@ -18,13 +18,13 @@ namespace Cine_.Models.Data
         public IQueryable<Movie> Movies => context.Movies;
         public IQueryable<Client> Clients => context.Clients;
         public IQueryable<Genre> Genres => context.Genres;
-        public IQueryable<DiscountType> DiscountTypes => context.DiscountTypes;
         public IQueryable<Room> Rooms => context.Rooms;
         public IQueryable<Shift> Shifts => context.Shifts;
         public IQueryable<SpecialDate> SpecialDates => context.SpecialDates;
         public IQueryable<SpecialUser> SpecialUsers => context.SpecialUsers;
         public IQueryable<Presentation> Presentations => context.Presentations;
-
+        public IQueryable<Membership> Memberships => context.Memberships;
+        public IQueryable<Purchase> Purchases => context.Purchases;
 
         public Movie DeleteMovie(Guid id)
         {
@@ -114,33 +114,6 @@ namespace Cine_.Models.Data
             context.SaveChanges();
         }
 
-        public DiscountType DeleteDiscountType(Guid id)
-        {
-            DiscountType discountType = context.DiscountTypes.FirstOrDefault(m => m.DiscountTypeID == id);
-
-            if (discountType != null)
-            {
-                context.DiscountTypes.Remove(discountType);
-                context.SaveChanges();
-            }
-            return discountType;
-        }
-        public void SaveDiscountType(DiscountType discountType)
-        {
-            if (discountType.DiscountTypeID.CompareTo(Guid.Empty) == 0)
-            {
-                context.DiscountTypes.Add(discountType);
-            }
-            else
-            {
-                DiscountType bdDiscountType = context.DiscountTypes.FirstOrDefault(m => m.DiscountTypeID == discountType.DiscountTypeID);
-                bdDiscountType.Name = discountType.Name;
-                bdDiscountType.DiscountRate = discountType.DiscountRate;
-            }
-
-            context.SaveChanges();
-        }
-
         public Room DeleteRoom(Guid id)
         {
             Room room = context.Rooms.FirstOrDefault(m => m.RoomID == id);
@@ -224,32 +197,34 @@ namespace Cine_.Models.Data
             context.SaveChanges();
         }
 
-        //public SpecialUser DeleteSpecialUser(Guid id)
-        //{
-        //    SpecialUser specialUser = context.SpecialUsers.FirstOrDefault(m => m.SpecialUserID == id);
+        public SpecialUser DeleteSpecialUser(Guid id)
+        {
+            SpecialUser specialUser = context.SpecialUsers.FirstOrDefault(m => m.SpecialUserID == id);
 
-        //    if (specialUser != null)
-        //    {
-        //        context.SpecialUsers.Remove(specialUser);
-        //        context.SaveChanges();
-        //    }
-        //    return specialUser;
-        //}
-        //public void SaveSpecialUser(SpecialUser specialUser)
-        //{
-        //    if (specialUser.SpecialUserID.CompareTo(Guid.Empty) == 0)
-        //    {
-        //        context.SpecialUsers.Add(specialUser);
-        //    }
-        //    else
-        //    {
-        //        SpecialUser bdSpecialUser = context.SpecialUsers.FirstOrDefault(m => m.SpecialUserID == specialUser.SpecialUserID);
-        //        bdSpecialUser. = genre.Name;
+            if (specialUser != null)
+            {
+                context.SpecialUsers.Remove(specialUser);
+                context.SaveChanges();
+            }
+            return specialUser;
+        }
+        public void SaveSpecialUser(SpecialUser specialUser)
+        {
+            if (specialUser.SpecialUserID.CompareTo(Guid.Empty) == 0)
+            {
+                context.SpecialUsers.Add(specialUser);
+            }
+            else
+            {
+                SpecialUser bdSpecialUser = context.SpecialUsers.FirstOrDefault(m => m.SpecialUserID == specialUser.SpecialUserID);
+                bdSpecialUser.Name = specialUser.Name;
+                bdSpecialUser.DiscountRate = specialUser.DiscountRate;
 
-        //    }
+            }
 
-        //    context.SaveChanges();
-        //}
+            context.SaveChanges();
+        }
+
         public Presentation DeletePresentation(Guid MovieID, Guid RoomID, Guid ShiftID, DateTime Date)
         {
             Presentation presentation = context.Presentations.FirstOrDefault(p => 
@@ -267,9 +242,70 @@ namespace Cine_.Models.Data
         }
         public void SavePresentation(Presentation presentation)
         {
-            context.Presentations.Add(presentation);
+            Presentation bdPresentation = context.Presentations.FirstOrDefault(p =>
+                p.MovieID == presentation.MovieID
+                && p.RoomID == presentation.RoomID &&
+                p.ShiftID == presentation.ShiftID
+                && p.Date == presentation.Date);
+            if (bdPresentation == null)
+            {
+                context.Presentations.Add(presentation);
+            }
+            else
+            {
+                bdPresentation.TicketPrice = bdPresentation.TicketPrice;
+                bdPresentation.Availability = bdPresentation.Availability;
+            }
+
+            context.SaveChanges();
+        }
+        public Membership DeleteMembership(Guid id)
+        {
+            Membership membership = context.Memberships.FirstOrDefault(m => m.ClientID == id);
+
+            if (membership != null)
+            {
+                context.Memberships.Remove(membership);
+                context.SaveChanges();
+            }
+            return membership;
+        }
+        public void SaveMembership(Membership membership)
+        {
+            Membership bdMembership = context.Memberships.FirstOrDefault(m => m.ClientID == membership.ClientID);
+            if (bdMembership != null)
+            {
+                bdMembership.MembershipID = bdMembership.MembershipID;
+                bdMembership.Points = bdMembership.Points;
+            }
+            else
+                context.Memberships.Add(membership);
             context.SaveChanges();
         }
 
+        
+        
+        public Purchase DeletePurchase(Guid ClientID,Guid MovieID, Guid RoomID, Guid ShiftID, DateTime Date)
+        {
+            Purchase purchase = context.Purchases.FirstOrDefault(p =>
+            p.MovieID == MovieID
+            && p.RoomID == RoomID
+            && p.ShiftID == ShiftID
+            && p.Date == Date
+            && p.ClientID == MovieID
+            );
+
+            if (purchase != null)
+            {
+                context.Purchases.Remove(purchase);
+                context.SaveChanges();
+            }
+            return purchase;
+        }
+        public void SavePurchase(Purchase purchase)
+        {
+            context.Purchases.Add(purchase);
+            context.SaveChanges();
+        }
     }
 }

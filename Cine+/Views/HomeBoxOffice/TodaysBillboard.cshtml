@@ -1,0 +1,33 @@
+﻿@model List<TodaysPresentationsViewModel>
+@{
+    Layout = "_LayoutBoxOffice";
+}
+    <div id="ReservationViewModel" class=" fixed bg-secondary mb-3 breadcrumb margin pos">
+        <table class="table my-2 text-center table-light">
+            <tr>
+                <th>Movie</th>
+                <th>Room</th>
+                <th>Time</th>
+                <th>Ticket Price</th>
+                <th></th>
+            </tr>
+            @for (int i = 0; i < Model.Count; i++)
+            {
+        <tr>
+            <td>@Model[i].MovieTitle</td>
+            <td>@Model[i].RoomName</td>
+            <td>@Model[i].ShiftTime.Hour:@Model[i].ShiftTime.Minute</td>
+            <td>@Model[i].TicketPrice</td>
+            <td>
+                <a asp-controller="Purchase" asp-action="BuyTickets" class="btn btn-sm btn-success"
+                   asp-route-MovieID="@Model[i].MovieID" asp-route-RoomID="@Model[i].RoomID"
+                   asp-route-ShiftID="@Model[i].ShiftID" asp-route-Date="@DateTime.Today">
+                    Buy Tickets
+                </a>
+            </td>
+        </tr>
+            }
+
+        </table>
+    </div>
+

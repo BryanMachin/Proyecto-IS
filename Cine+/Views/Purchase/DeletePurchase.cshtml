@@ -1,0 +1,57 @@
+﻿@model DeletePurchaseViewModel
+
+@{
+    Layout = "_LayoutClientPurchasing";
+}
+
+<div class="margin mx-auto card text-white bg-light mb-3" style="height: 90%; width:90%">
+    <div class="card-header text-dark">Confirmation ID</div>
+    <div class="card-body d-xxl-table-row">
+
+        <form asp-action="DeletePurchase" method="post">
+            <input type="hidden" asp-for="ClientID" />
+            <input type="hidden" asp-for="MovieID" />
+            <input type="hidden" asp-for="RoomID" />
+            <input type="hidden" asp-for="ShiftID" />
+            <input type="hidden" asp-for="Date" />
+            <input type="hidden" asp-for="PurchaseID" />]
+
+            <div class="form-group">
+                <label class="text-dark">Purchase ID</label>
+                @if (ViewBag.ErrorMessage != null)
+                {
+                    <div class="text-primary">
+                        <p>@ViewBag.ErrorMessage</p>
+                    </div>
+           }
+           <input asp-for="InputPurchaseID" class="form-control" />
+            </div>
+                <div class="margin text-center">
+                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter">
+                        OK
+                    </button>
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Confirmation</h5>
+                                </div>
+                                <div class="modal-body text-black-50">
+                                    <p>You are about to cancel a ticket purchase, are you sure you want to continue?</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-info" type="submit"> Yes </button>
+                                    <button type="button" class="btn btn-dark" data-dismiss="modal">No</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a asp-action="ReturnTickets" class="btn btn-dark">  Cancel </a>
+                </div>
+            }
+
+        </form>
+    </div>
+</div>
+
+

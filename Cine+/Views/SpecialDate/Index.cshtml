@@ -1,6 +1,7 @@
 ﻿@model IEnumerable<SpecialDate>
 
-<table class="table table-striped text-center table-light">
+<div id="table">
+<table class="table my-2 text-center table-light">
     <tr>
         <th>Name</th>
         <th>Date</th>
@@ -24,7 +25,8 @@
         </tr>
     }
 </table>
-<div class="text-center">
+</div>
+<div id="add" class="text-center">
     <a asp-action="Create" class="btn btn-info">
         Add Special Date
     </a>
